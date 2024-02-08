@@ -1,4 +1,4 @@
-# Proyecto de Encriptación y Desencriptación de Texto
+# Encryption Challenge - AluraLatam
 
 Este proyecto es una aplicación web completamente responsive desarrollada con tecnologías web como HTML, CSS y JavaScript. Permite a los usuarios encriptar y desencriptar texto proporcionado por el usuario.
 
@@ -16,8 +16,9 @@ Este proyecto es una aplicación web completamente responsive desarrollada con t
 
 ## Demo
 
-Puedes ver una demostración de la aplicación en acción [Encryptor-Challenge](#).
+Puedes ver una demostración de la aplicación en acción [Encryptor-Challenge](https://ibrahim-003.github.io/encryption-challenge/).
 
 ## Capturas de Pantalla
+
 ![Pantalla de inicio](./images/inicio.png)
 ![Usando la aplicacion](./images/enmarcha.png)
