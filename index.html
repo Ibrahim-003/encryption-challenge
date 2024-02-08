@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/main.css">
+    <title>Encriptador - Project</title>
+</head>
+
+<body>
+    <div class="root">
+
+        <header class="header">
+            <div class="logo-container">
+                <img src="./images/Vectorlogo.svg" alt="Logo de la empresa" class="logo">
+            </div>
+        </header>
+        <main class="main container">
+            <section class="input-section">
+                <section class="text-container">
+                    <textarea name="userEntry" id="userEntry" cols="30" rows="10"
+                        placeholder="Ingrese el texto aqui"></textarea>
+                </section>
+                <section class="actions-container">
+                    <div class="alert">
+                        <img src="./images/bi_exclamation-circle-fill.png" alt="Icono de alerta">
+                        <span>Solo letras minusculas y sin acentos.</span>
+                    </div>
+                    <div class="btns-container">
+                        <button class="encryptor btn">Encriptar</button>
+                        <button class="decryptor btn">Desencriptar</button>
+                    </div>
+                </section>
+            </section>
+            <section class="output-section">
+                <div class="output-containerN output-container">
+                    <img src="./images/helper.png" alt="Imagen de una persona con una lupa" class="withoutOutput">
+                    <h2>Ningun mensaje fue encontrado</h2>
+                    <p>Ingrese el texto que desees encriptar o desencriptar</p>
+                </div>
+            </section>
+        </main>
+        <footer class="footer">
+            <p>Created by @IbrahimAlmeyda</p>
+        </footer>
+    </div>
+    <script type="module" src="./js/main.js"></script>
+</body>
+
+</html>

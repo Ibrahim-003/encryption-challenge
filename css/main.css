@@ -1,0 +1,275 @@
+@import url("./base.css");
+@import url("./reset.css");
+
+::-webkit-scrollbar {
+    width: 6px;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: var(--light-blue-300);
+    border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background-color: var(--light-blue-400);
+}
+
+/* ROOT */
+.root {
+    width: inherit;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+/* HEADER */
+.header {
+    padding: 1rem;
+}
+
+.logo-container {
+    width: 5%;
+}
+
+.logo {
+    width: 100%;
+    max-width: 36px;
+    height: auto;
+}
+
+
+/* MAIN */
+.main {
+    width: inherit;
+    padding: 1rem;
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+}
+
+.input-section {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.text-container {
+    margin-bottom: 1.5rem;
+    flex-grow: 1;
+}
+
+.text-container textarea {
+    width: 100%;
+    height: 100%;
+    border: 2px solid var(--gray-300);
+    outline: none;
+    border-radius: 0.5rem;
+    resize: none;
+    padding: 1rem 0.75rem;
+    font-size: var(--font-lg);
+    line-height: 1.3;
+    color: var(--gray-400);
+    background-color: var(--light-blue-300);
+}
+
+.text-container textarea::placeholder {
+    color: var(--dark-blue-300);
+    font-size: var(--font-2xl);
+}
+
+.alert {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.alert span {
+    font-size: 12px;
+    color: var(--gray-400);
+}
+
+.btns-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 1rem 0;
+    gap: 1.25rem;
+}
+
+.btn {
+    padding: 1rem 1.5rem;
+    border-radius: 1.25rem;
+    cursor: pointer;
+    display: block;
+    margin: 0 auto;
+    width: 100%;
+    max-width: 500px;
+    /* font-weight: 550; */
+    letter-spacing: 0.15rem;
+}
+
+.encryptor {
+    border: 1px solid var(--dark-blue-300);
+    background-color: var(--dark-blue-300);
+    color: white;
+    transition: all 0.2s ease-in-out;
+}
+
+.encryptor:hover {
+    background-color: var(--dark-blue-400);
+}
+
+.decryptor {
+    border: 1px solid var(--dark-blue-300);
+    background-color: white;
+    color: var(--dark-blue-300);
+    transition: all 0.2s ease-in-out;
+}
+
+.copy {
+    border: 1px solid var(--dark-blue-300);
+    background-color: inherit;
+    color: var(--dark-blue-300);
+    transition: all 0.2s ease-in-out;
+}
+
+.copy:hover {
+    background-color: var(--light-blue-300);
+}
+
+.decryptor:hover {
+    background-color: var(--light-blue-300);
+}
+
+.output-section {
+    padding: 2rem;
+    background-color: white;
+    border-radius: 2rem;
+    box-shadow: 0 24px 32px -8px rgba(0, 0, 0, 0.1);
+}
+
+.output-container {
+    overflow-y: auto;
+    max-height: 100vh;
+}
+
+.output-containerN {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    text-align: center;
+}
+
+.output-containerF {
+    height: 100%;
+    padding: 2rem 0 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 1.5rem;
+}
+
+.output-container h2 {
+    font-weight: bold;
+    font-size: var(--font-2xl);
+}
+
+.output-container p {
+    color: var(--gray-400);
+    padding: 0 0.5rem;
+    line-height: 1.5;
+}
+
+.withoutOutput {
+    display: none;
+}
+
+/* FOOTER */
+.footer p {
+    text-align: center;
+    color: var(--gray-500);
+    font-weight: bold;
+    padding: 1rem;
+    background-color: var(--light-blue-400)
+}
+
+@media screen and (min-width: 768px) {
+    .header {
+        padding: 2rem;
+    }
+
+    .main {
+        padding: 0 2rem 1.5rem;
+    }
+
+    .input-section {
+        flex-grow: 1;
+    }
+
+    .text-container textarea {
+        padding: 1.125rem 1rem;
+    }
+
+    .text-container textarea::placeholder {
+        font-size: var(--font-3xl);
+    }
+
+    .btns-container {
+        flex-direction: row;
+    }
+
+    .output-section {
+        max-height: 40%;
+    }
+
+}
+
+@media screen and (min-width: 1024px) {
+    .header {
+        padding: 2rem 3rem;
+    }
+
+    .main {
+        padding: 3rem;
+        flex-direction: row;
+    }
+
+    .text-container textarea {
+        padding: 1.125rem 1.5rem;
+    }
+
+    .alert span {
+        font-size: 12px;
+        color: var(--gray-500);
+        font-weight: bold;
+    }
+
+    .output-section {
+        width: 35%;
+        max-height: 100%;
+        padding: 2rem 2rem 1rem;
+    }
+
+    .withoutOutput {
+        display: block;
+        margin: 0 auto;
+        width: 100%;
+        max-width: 340px;
+        height: auto;
+    }
+}
+
+@media screen and (min-width: 1280px) {
+    .main {
+        padding: 1.5rem 6rem;
+    }
+
+    .header {
+        padding: 2rem 6rem;
+    }
+}
